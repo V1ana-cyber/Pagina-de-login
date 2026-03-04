@@ -1,0 +1,88 @@
+body {
+    background: linear-gradient(to right, #2193b0, #6dd5ed); /* cor de fundo da página */
+    font-family: Arial, sans-serif; /* fonte do texto */
+    margin: 0;                      /* remove margens padrão do body */
+    min-height: 100vh;              /* garante que o fundo cubra toda a altura da tela */
+    display: flex;                  /* opcional: ajuda a centralizar verticalmente se quiser */
+    align-items: center;
+    justify-content: center;
+}
+
+.box {
+    background-color: rgba(255, 255, 255, 0.8); /* cor de fundo da caixa com transparência */
+    border-radius: 10px;                        /* bordas arredondadas */
+    padding: 40px 30px;                         /* aumentei um pouco o padding */
+    max-width: 400px;                           /* largura máxima da caixa */
+    width: 90%;                                 /* responsivo em telas menores */
+    margin: 40px auto;                          /* reduzi o margin-top de 350px para algo mais razoável */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25); /* sombra mais suave e moderna */
+    text-align: center;                         /* centraliza textos dentro da caixa */
+}
+
+.titulo-box-login h1 {
+    margin: 0 0 35px 0;          /* espaço abaixo do título */
+    color: rgb(60, 102, 126);
+    font-size: 28px;
+}
+
+.input-usuario,
+.input-senha {
+    margin-bottom: 25px;         /* espaço entre os blocos de input */
+    text-align: left;            /* labels e inputs alinhados à esquerda (mais natural) */
+}
+
+.input-usuario h3,
+.input-senha h3 {
+    margin: 0 0 8px 0;           /* espaço entre label e input */
+    color: #333;                 /* cor mais legível (ao invés de rgb(3,2,2) quase preto) */
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.input-usuario input,
+.input-senha input {
+    width: 100%;                 /* ocupa toda a largura disponível */
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    box-sizing: border-box;      /* evita que padding quebre a largura */
+}
+
+.botao-entrar {
+    margin-top: 20px;            /* ← ESSA LINHA É A PRINCIPAL CORREÇÃO: espaço acima do botão */
+    text-align: center;          /* centraliza o botão se ele não for 100% */
+}
+
+.botao-entrar button {
+    background-color: #0105e6;   /* azul forte */
+    color: white;                /* texto branco (muito mais legível que rgb(8,5,5)) */
+    padding: 14px 40px;          /* botão maior e mais confortável */
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 18px;             /* fonte maior (10px era muito pequeno) */
+    font-weight: bold;
+    width: 100%;                 /* ou 60% se quiser menor → width: 60%; */
+    max-width: 220px;            /* limite máximo para não ficar gigante */
+    transition: background-color 0.3s ease;
+}
+
+.botao-entrar button:hover {
+    background-color: #0008cc;   /* escurece um pouco ao passar o mouse */
+}
+
+/* Link "Esqueceu a senha?" */
+nav {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+nav a {
+    color: #0105e6;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
